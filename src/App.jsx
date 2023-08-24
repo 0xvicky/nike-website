@@ -9,9 +9,11 @@ import {
   Services
 } from "./container";
 
+import {Navbar} from "./components";
 const App = () => {
   return (
     <main className='relative'>
+      <Navbar />
       <section className='xl:padding-1 wide:padding-r padding-b'>
         <Hero />
       </section>
