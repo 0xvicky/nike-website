@@ -8,7 +8,7 @@ const Button = ({label, imgUrl, backgroundColor, textColor, borderColor}) => {
      ${
        backgroundColor
          ? `${backgroundColor} ${textColor} ${borderColor}`
-         : "  text-white border-coral-red bg-coral-red"
+         : "text-white border-coral-red bg-coral-red"
      }
      `}>
         {label}
