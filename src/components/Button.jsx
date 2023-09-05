@@ -1,9 +1,16 @@
 import React from "react";
 
-const Button = ({label, imgUrl}) => {
+const Button = ({label, imgUrl, backgroundColor, textColor, borderColor}) => {
   return (
     <div>
-      <button className='flex justify-center items-center gap-2 px-7 py-4 font-montserrat text-lg leading-none rounded-full text-white border-coral-red bg-coral-red'>
+      <button
+        className={`flex justify-center items-center gap-2 px-7 py-4 font-montserrat text-lg leading-none border rounded-full
+     ${
+       backgroundColor
+         ? `${backgroundColor} ${textColor} ${borderColor}`
+         : "  text-white border-coral-red bg-coral-red"
+     }
+     `}>
         {label}
         {imgUrl && (
           <img
